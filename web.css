@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #3CB371;
+}
+
+.header {
+  padding: 8px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 40px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+h2{
+  color: red;
+}
+
+h4{
+  color: #0000CD;
+}
+
+ul.life {list-style-type: square;}
+ol.sks{list-style-type: upper-roman;}
+ol.smkk{list-style-type: upper-roman;}
+ol.sms{list-style-type: upper-roman;}
+ol.cfs{list-style-type: upper-roman;}
+
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #3CB371;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 5px;
+  text-align: center;
+  background:#2E8B57;
+  margin-top: 20px;
+}
+
+.footer a{  text-align: center;}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
